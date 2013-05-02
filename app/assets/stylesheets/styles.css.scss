@@ -12,7 +12,7 @@ $navbarBackgroundHighlight: white;
 @import 'bootstrap';
 
 body {
-	padding: 90px;
+	padding-top	: 90px;
 }
 
 @import 'bootstrap-responsive';
@@ -51,6 +51,14 @@ body {
 .btn-large {
 padding: 10px 25px;
 font-size: 22px;
+}
+
+.well {
+	background-color: white;
+	border: none;
+	box-shadow: none; 
+	webkit-box-shadow: none;
+	moz-box-shadow: none;
 }
 
 .footer {
