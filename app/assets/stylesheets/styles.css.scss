@@ -1,0 +1,61 @@
+$baseFontFamily: Josefin Sans;
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600);
+
+$bodyBackground: #F1F0EE;
+$textColor: #34495E;
+$linkColor: #6EA6D9;
+$btnPrimaryBackground: #2DC76E;
+$btnPrimaryBackgroundHighlight: #25AE5F;
+$navbarBackground: white;
+$navbarBackgroundHighlight: white;
+
+@import 'bootstrap';
+
+body {
+	padding: 90px;
+}
+
+@import 'bootstrap-responsive';
+
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
+}
+
+.brand-icon {
+	float: left;
+	padding: 10px 0px 10px;
+}
+
+.btn {
+	border: none;
+	box-shadow: none; 
+	webkit-box-shadow: none;
+	moz-box-shadow: none;
+	background-image: none;
+}
+
+.navbar {
+	.btn-group {
+		margin: 0px;
+		
+		.btn-large {
+			font-size: 22px;
+		}
+	}
+	.pull-right {
+		margin-top: 20px; 
+	}
+}
+
+.btn-large {
+padding: 10px 25px;
+font-size: 22px;
+}
+
+.footer {
+	/* color: $grayLight;
+    a{
+        color: $gray;
+    }*/
+}
