@@ -8,14 +8,21 @@ $btnPrimaryBackground: #2DC76E;
 $btnPrimaryBackgroundHighlight: #25AE5F;
 $navbarBackground: white;
 $navbarBackgroundHighlight: white;
+$headingsFontWeight: normal;
 
 @import 'bootstrap';
 
 body {
-	padding-top	: 90px;
+	padding-top	: 110px;
 }
 
 @import 'bootstrap-responsive';
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
 
 .navbar-inner{
     @include box-shadow(none !important);
@@ -41,6 +48,7 @@ body {
 		
 		.btn-large {
 			font-size: 22px;
+			text-shadow: none;
 		}
 	}
 	.pull-right {
@@ -49,8 +57,9 @@ body {
 }
 
 .btn-large {
-padding: 10px 25px;
-font-size: 22px;
+	padding: 10px 25px;
+	font-size: 22px;
+	text-shadow: none;
 }
 
 .well {
@@ -59,6 +68,32 @@ font-size: 22px;
 	box-shadow: none; 
 	webkit-box-shadow: none;
 	moz-box-shadow: none;
+	padding: 0px;
+	margin-bottom: 30px;
+
+	img {
+		-webkit-border-top-left-radius: 4px;
+		-webkit-border-bottom-left-radius: 4px;
+		-moz-border-radius-topleft: 4px;
+		-moz-border-radius-bottomleft: 4px;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+}
+
+.pin_description {
+	display: inline-block;
+	margin-left: 20px;
+
+/*	h1 {
+	}
+*/
+	
+/*	h2 {
+		;
+	}*/
+
 }
 
 .footer {
