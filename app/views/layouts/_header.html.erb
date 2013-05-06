@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
-    <div class="container">
+    <div class="container-fluid">
  
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -19,7 +19,6 @@
 				<div class="pull-right">
 					<ul class="nav">
 	        	<li><%= link_to "about", about_path %></li>
-						<li><%= link_to "contact", "#" %></li>
             <% if user_signed_in? %>
               <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
             <% end %>

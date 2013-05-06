@@ -1,20 +1,27 @@
-<div class="well">
-	<%= image_tag pin.image(:medium) %>
-	
-	<div class="pin_description">	
-	  <h1>
-		  <%= pin.title %>
-	  </h1>
-	  <h4>
-		  by <%= link_to pin.author, pin.author_link, :target => "_blank" %>
-	  </h4>
-	  <%= link_to "download", pin.download_link, class: "btn btn-large btn-primary"%>
-	 
-	  <% if current_user == pin.user %>
-			<%= link_to 'Show', pin %>
-		  <%= link_to 'Edit', edit_pin_path(pin) %>
-		  <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-	  <% end %>
+<div class="span4">
+	<div class="pin pull-right">
+		<div class="pin_image">
+	 		<a href=<%= pin.download_link %>>
+	 			<%= image_tag pin.image(:medium) %>
+	 			<span><b>download</b></span>
+	 		</a> 
+		</div>
+
+		<div class="pin_description">	
+			<h3>
+				<%= pin.title %>
+		  </h3>
+		  <h5>
+			  by <%= link_to pin.author, pin.author_link, :target => "_blank" %>
+		  </h5>
+		 	
+		  <% if current_user == pin.user %>
+		  	Tags <%= raw pin.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
+				<%= link_to 'Show', pin %>
+			  <%= link_to 'Edit', edit_pin_path(pin) %>
+			  <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+		  <% end %>
+		</div>
 	</div>
   
 </div>

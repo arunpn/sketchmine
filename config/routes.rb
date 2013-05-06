@@ -8,6 +8,10 @@ Sketchmine::Application.routes.draw do
 
   root :to => 'pins#index'
 
+  # to link tags to items with tag page 
+  get 'tags/:tag', to: 'pins#index', as: :tag
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

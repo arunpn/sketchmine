@@ -8,6 +8,7 @@ gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
+gem 'acts-as-taggable-on'
 
 group :production do
   gem 'pg'
