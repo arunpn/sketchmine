@@ -80,12 +80,9 @@ body {
 	moz-box-shadow: none;
 	padding: 0px;
 	margin-bottom: 30px;
-	-webkit-border-bottom-left-radius: 4px;
-	-webkit-border-bottom-right-radius: 4px;
-	-moz-border-radius-bottomleft: 4px;
-	-moz-border-radius-bottomright: 4px;
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 
 	img {
 		-webkit-border-top-left-radius: 4px;
@@ -151,9 +148,6 @@ body {
 	}
 }
 
-.row-fluid{
-	width: 100%
-}
 
 .row-fluid [class*="span4"]:first-child {
   margin-left: 1.7%;
