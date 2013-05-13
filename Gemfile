@@ -9,6 +9,9 @@ gem 'aws-sdk'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
 gem 'acts-as-taggable-on'
+gem 'active_attr', '~> 0.7.0'
+gem 'slim-rails'
+gem 'validates_email_format_of'
 
 group :production do
   gem 'pg'
@@ -16,6 +19,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem "letter_opener"
 end
 
 group :assets do

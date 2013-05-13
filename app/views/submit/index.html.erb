@@ -1,0 +1,18 @@
+<h1> Submit a .sketch file </h1>
+
+<!-- - flash.each do |name, value|
+  p class="#{name}" #{value} -->
+
+<%= simple_form_for(@message, url: email_form_path, html: { class: "form-horizontal"}) do |f| %>
+  <%= f.input :name, label: "Your name" %>
+  <%= f.input :email, label: "Your email" %>
+  <%= f.input :title, label: "Title of the file" %>
+  <%= f.input :author, label: "Author's name" %>
+  <%= f.input :author_link, label: "Link to author's website, dribble or twitter" %>
+  <%= f.input :download_link, label: "Download link" %>
+  <%= f.input :image, label: "URL of preview image	" %>
+
+   <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+ <% end %>	

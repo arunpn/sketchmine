@@ -1,0 +1,10 @@
+<div class="span2 hidden-phone">
+	<div class="tag_nav">
+		<%= link_to "Recent", root_path, class: 'tag_list' %>
+  	<div id="tag_cloud">
+			<% tag_cloud Pin.tag_counts.order("name asc"), %w[s m l] do |tag, tag_list| %>
+  			<%= link_to tag.name, tag_path(tag.name), class: "tag_list" %>
+			<% end %>
+		</div>	
+	</div>	
+</div>

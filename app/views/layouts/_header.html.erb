@@ -28,7 +28,7 @@
             <% if user_signed_in? %>
 		          <%= link_to "add", new_pin_path, class: "btn btn-large btn-primary" %>
             <% else %>
-              <%= link_to "submit", '#', class: "btn btn-large btn-primary" %>
+              <%= link_to "submit", submit_index_path, class: "btn btn-large btn-primary" %>
             <% end %>
 					</div>
 				</div>

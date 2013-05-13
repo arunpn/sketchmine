@@ -1,3 +1,14 @@
-<%= render @pins %>
+<%= render 'sidetag' %>
 
-<%= will_paginate @pins %>
+<div class="span10">
+	<div class="row-fluid ">
+    <% flash.each do |name, msg| %>
+    	<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+  	<% end %>
+
+			<%= render @pins %>
+
+			<%= will_paginate @pins %>
+
+	</div>
+</div>

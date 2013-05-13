@@ -1,5 +1,11 @@
 Sketchmine::Application.routes.draw do
+
   resources :pins
+
+  resources :submit, only: :index
+
+  match '/email' => 'submit#send_email_form', as: :email_form, via: :post
+
 
 
   devise_for :users
