@@ -66,7 +66,7 @@ Sketchmine::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # In production, :host should be set to the actual host of your application.
-  config.action_mailer.default_url_options = { :host => 'http://www.sketchmine.co' }
+  config.action_mailer.default_url_options = { :host => 'sketchmine.co' }
 
   # Configuring Amazon S3 for Paperclip file uploads
   config.paperclip_defaults = {
@@ -83,9 +83,9 @@ Sketchmine::Application.configure do
   config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => 'gmail.com',
-  :user_name            => ENV ['MAILER_USER_NAME'],
-  :password             => ENV ['MAILER_PASSWORD'],
+  :domain               => "gmail.com",
+  :user_name            => ENV['MAILER_USER_NAME'],
+  :password             => ENV['MAILER_PASSWORD'],
   :authentication       => 'plain',
   :enable_starttls_auto => true  
   }
