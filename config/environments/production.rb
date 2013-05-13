@@ -66,7 +66,7 @@ Sketchmine::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # In production, :host should be set to the actual host of your application.
-  config.action_mailer.default_url_options = { :host => 'sketchmine.co' }
+  config.action_mailer.default_url_options = { :host => 'http://www.sketchmine.co' }
 
   # Configuring Amazon S3 for Paperclip file uploads
   config.paperclip_defaults = {
@@ -75,8 +75,8 @@ Sketchmine::Application.configure do
       :bucket => ENV['AWS_BUCKET'],
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
   }
-}
 
   # Configuration mailers 
   config.action_mailer.delivery_method = :smtp
@@ -87,6 +87,7 @@ Sketchmine::Application.configure do
   :user_name            => ENV ['USER_NAME'],
   :password             => ENV ['PASSWORD'],
   :authentication       => 'plain',
-  :enable_starttls_auto => true  }
+  :enable_starttls_auto => true  
+  }
 
 end
