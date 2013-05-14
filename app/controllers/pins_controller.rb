@@ -8,7 +8,7 @@ class PinsController < ApplicationController
     if params[:tag]
       @pins = Pin.tagged_with(params[:tag]).order("created_at desc").page(params[:page]).per_page(18)
     else
-      @pins = Pin.order("created_at desc").page(params[:page]).per_page(10)
+      @pins = Pin.order("created_at desc").page(params[:page]).per_page(18)
     end
 
     respond_to do |format|
