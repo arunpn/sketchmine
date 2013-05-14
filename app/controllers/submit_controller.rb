@@ -9,9 +9,9 @@ class SubmitController < ApplicationController
   	
   	if @message.valid?
   		ContactForm.email_form(@message).deliver
-  		redirect_to root_path, notice: "Email successfully sent."
+  		redirect_to root_path, notice: "Your .sketch file has been submited. It will be reviewed and posted very soon!"
   	else
-  		flash.now.alert = "Email could not be sent. Please check your entries."
+  		flash.now.alert = "Submit didn't work. Please check your entries."
   		render :index
   	end
 
