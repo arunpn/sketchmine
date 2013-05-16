@@ -6,9 +6,10 @@
     	<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
   	<% end %>
 
-			<%= render @pins %>
-
-			<%= will_paginate @pins %>
-
+		<%= render @pins %>
+		
 	</div>
+	<div class="pagination">
+			<%= will_paginate @pins %>
+		</div>
 </div>
